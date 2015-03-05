@@ -1,6 +1,6 @@
 if(!localStorage.getItem("appid") || !localStorage.getItem("jsid")){
-	var appid = prompt("appid");
-	var jsid  = prompt("jsid");
+	var appid = window.navigator.notification.prompt("appid");
+	var jsid  = window.navigator.notification.prompt("jsid");
 	while(appid.length != 40 || jsid.lenght != 40){
 		appid = prompt("appid");
 		jsid  = prompt("jsid");	
